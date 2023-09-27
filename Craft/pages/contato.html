@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craft</title>
+  <link rel="shortcut icon" href="/img/Icon-craft2.png" type="image/x-icon" />
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- CSS OpenStreetMap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- JavasCript OpenStreetMap -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-primary-color" id="navbar">
+    <div class="container py-3">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/logo-craft2.png" class="align-self-start mr-3" alt="Craft" width="200" height="37" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+        aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/projetos.html">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contatos -->
+  <div class="container py-3">
+    <div class="py-4 px-5">
+      <h2> Craft - Transformando Ideias em Espaços Sustentáveis e Inspiradores</h2>
+    </div>
+  <div class="row justify-content-between">
+    <div class="col-5">
+      <div class="row">
+        <div class="col-12" id="footer-top">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h2>Contatos</h2>
+            </div>
+          </div>
+
+          <p>
+            <b>Endereço: </b>
+            Av. Getúlio Dorneles Vargas, 1183N - Centro, Chapecó - SC
+            <b>Telefone:</b> +55 (49) 3323-1234
+            <br><b>E-mail:</b> contato@craft.com
+          </p>
+          <p>
+            <b>Horário de Funcionamento:</b> Segunda a Sexta-feira: 9:00 às 18:00
+            Se você deseja agendar uma consulta, obter informações adicionais sobre nossos serviços ou discutir projetos
+            futuros, não hesite em nos contatar. Estamos ansiosos para colaborar com você na criação de espaços
+            inspiradores e sustentáveis que atendam às suas necessidades e visões únicas.
+            <br><br><b>Redes Sociais:</b><br>
+            <a href="#">Facebook</a><br>
+            <a href="#"> Instagram</a><br>
+            <a href="#">LinkedIn</a><br>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Mapa -->
+    <div class="col-6 py-2">
+      <div id="map" style="
+        width: 600px;
+        height: 400px;
+        outline-style: none;
+        
+      " class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+        tabindex="0">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(115px, -109px, 0px)">
+          <div class="leaflet-pane leaflet-tile-pane">
+            <div class="leaflet-layer" style="z-index: 1; opacity: 1">
+              <div class="leaflet-tile-container leaflet-zoom-animated" style="
+                z-index: 17;
+                transform: translate3d(174px, 165px, 0px) scale(0.25);
+              "></div>
+              <div class="leaflet-tile-container leaflet-zoom-animated" style="
+                z-index: 19;
+                transform: translate3d(0px, 0px, 0px) scale(1);
+              ">
+                <img alt="" src="https://tile.openstreetmap.org/13/4093/2724.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(25px, 247px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4093/2723.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(25px, -9px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4092/2724.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(-231px, 247px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4094/2724.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(281px, 247px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4093/2725.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(25px, 503px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4092/2723.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(-231px, -9px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4094/2723.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(281px, -9px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4092/2725.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(-231px, 503px, 0px);
+                  opacity: 1;
+                " /><img alt="" src="https://tile.openstreetmap.org/13/4094/2725.png"
+                  class="leaflet-tile leaflet-tile-loaded" style="
+                  width: 256px;
+                  height: 256px;
+                  transform: translate3d(281px, 503px, 0px);
+                  opacity: 1;
+                " />
+              </div>
+            </div>
+          </div>
+          <div class="leaflet-pane leaflet-overlay-pane">
+            <svg pointer-events="none" class="leaflet-zoom-animated" width="720" height="480" viewBox="-175 69 720 480"
+              style="transform: translate3d(-175px, 69px, 0px)">
+              <g>
+                <path class="leaflet-interactive" stroke="red" stroke-opacity="1" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round" fill="#f03" fill-opacity="0.5" fill-rule="evenodd"
+                  d="M110.20355555554852,253.94704600190744a42,42 0 1,0 84,0 a42,42 0 1,0 -84,0 "></path>
+                <path class="leaflet-interactive" stroke="#3388ff" stroke-opacity="1" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round" fill="#3388ff" fill-opacity="0.2" fill-rule="evenodd"
+                  d="M327 245L443 301L519 235z"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="leaflet-pane leaflet-shadow-pane">
+            <img src="https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
+              class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="
+              margin-left: -12px;
+              margin-top: -41px;
+              width: 41px;
+              height: 41px;
+              transform: translate3d(269px, 329px, 0px);
+            " />
+          </div>
+          <div class="leaflet-pane leaflet-marker-pane">
+            <img src="https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png"
+              class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker" tabindex="0"
+              role="button" style="
+              margin-left: -12px;
+              margin-top: -41px;
+              width: 25px;
+              height: 41px;
+              transform: translate3d(269px, 329px, 0px);
+              z-index: 329;
+            " />
+          </div>
+          <div class="leaflet-pane leaflet-tooltip-pane"></div>
+          <div class="leaflet-pane leaflet-popup-pane"></div>
+          <div class="leaflet-proxy leaflet-zoom-animated"
+            style="transform: translate3d(1.04797e6px, 697406px, 0px) scale(4096)"></div>
+        </div>
+        <div class="leaflet-control-container">
+          <div class="leaflet-top leaflet-left">
+            <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+              <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in"
+                aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#"
+                title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span
+                  aria-hidden="true">−</span></a>
+            </div>
+          </div>
+          <div class="leaflet-top leaflet-right"></div>
+          <div class="leaflet-bottom leaflet-left"></div>
+          <div class="leaflet-bottom leaflet-right">
+            <div class="leaflet-control-attribution leaflet-control">
+              <a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                  class="leaflet-attribution-flag">
+                  <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                  <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                  <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                </svg>
+                Leaflet</a>
+              <span aria-hidden="true">|</span> ©
+              <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const map = L.map("map").setView([-27.0946499, -52.6172975], 13);
+
+        const tiles = L.tileLayer(
+          "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+          {
+            maxZoom: 19,
+            attribution:
+              '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          }
+        ).addTo(map);
+
+        const marker = L.marker([-27.0945389, -52.6172975]).addTo(map);
+
+      </script>
+    </div>
+  </div>
+</div>
+
+<!-- Formulário -->
+<div class="container py-3" id="info-container">
+  <div class="col-12">
+    <h2 class="title primary-color py-4">Envie sua solicitação!</h2>
+  </div>
+  <div class="col-12">
+    <div class="row">
+    
+      <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Clique aqui para abrir o formulário
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Nome Completo</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome Sobrenome">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Telefone</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="(99) 9 9999-9999">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escolha um dos projetos existentes ou faça uma breve descrição do projeto desejado</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="col-12 py-2">
+            <p>
+              <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#Form" aria-expanded="false" aria-controls="collapseWidthExample">
+                Enviar
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="Form">
+                <div class="card card-body" style="width: 300px;">
+                  Enviado!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark-color py-3" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="footer-top">
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                  </div>
+                  <div id="liveAlertPlaceholder"></div>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Inscrever
+                    </button>
+                  </p>
+                  <div style="min-height: 120px">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 300px">
+                        Inscrito!
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">+55 (49) 3323-1234</p>
+                <p class="secondary-color">contato@craft.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row py-2">
+                  <div class="row justify-content-between">
+                    <div class="col-4"></div>
+                    <div class="col-4" id="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-youtube"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">Craft &copy; 2023</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">
+                Realizamos o seu projeto com
+                <i class="bi bi-heart"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

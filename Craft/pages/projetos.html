@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft</title>
+    <link rel="shortcut icon" href="/img/Icon-craft2.png" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS OpenStreetMap -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- JavasCript OpenStreetMap -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="/img/logo-craft2.png"
+            class="align-self-start mr-3"
+            alt="Craft"
+            width="200"
+            height="37"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projetos -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h1 class="title primary-color">Trabalhos em Destaque</h1>
+        <p class="subtitle secondary-color">Conheça nossos projetos</p>
+      </div>
+      <div class="col-12">
+        <h2 class="title primary-color">Casa Planejada</h2>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="/img/project-1.jpg" alt="Projeto 1" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="banner-content">
+              <h3>Residência Verde</h3>
+              <p class="secondary-color" style="text-align: justify;">
+                    Esta inovadora residência ecológica, batizada carinhosamente de
+                "Residência Verde" é um exemplo inspirador de design sustentável
+                e responsabilidade ambiental. Localizada em um cenário natural
+                deslumbrante, esta casa não apenas se funde harmoniosamente com
+                a paisagem, mas também abraça sua responsabilidade de proteger o
+                meio ambiente. 
+                <br><br> <b>Materiais Sustentáveis:</b> Cada elemento desta casa
+                foi cuidadosamente selecionado para minimizar o impacto
+                ambiental. A estrutura principal é construída com madeira de
+                reflorestamento, garantindo que nenhum recurso natural valioso
+                seja esgotado. Os materiais de construção, como isolamento e
+                revestimentos, são todos de origem sustentável e de baixo
+                impacto. Energia Renovável: Para reduzir sua pegada de carbono,
+                a Residência Verde é equipada com um extenso sistema de painéis
+                solares no telhado. Esses painéis convertem a energia solar
+                abundante em eletricidade limpa, alimentando todas as
+                necessidades energéticas da casa, desde a iluminação até os
+                eletrodomésticos eficientes em termos energéticos. 
+                <br><br><b>Telhado
+                  Verde:</b> O telhado verde não é apenas uma característica estética,
+                mas também uma parte essencial do sistema de design ecológico.
+                Ele ajuda a regular a temperatura interna da casa,
+                proporcionando isolamento natural e reduzindo a necessidade de
+                aquecimento e resfriamento artificial. Além disso, serve como um
+                habitat para a vida selvagem local. Luz Natural Abundante: As
+                grandes janelas estrategicamente posicionadas na Residência
+                Verde são projetadas para maximizar a entrada de luz natural.
+                Isso não só cria um ambiente interno acolhedor e luminoso, mas
+                também reduz a dependência da iluminação artificial durante o
+                dia. 
+                <br><br><b>Sistema de Captação de Água da Chuva:</b> A casa possui um
+                sistema eficiente de captação de água da chuva que coleta e
+                armazena água para uso doméstico, como irrigação do jardim e
+                descarga de vasos sanitários. Isso ajuda a conservar os recursos
+                hídricos e reduz o consumo de água potável. 
+                
+                <br><br><b>Jardim com Plantas
+                  Nativas: </b>O jardim ao redor da Residência Verde é projetado com
+                plantas nativas que exigem menos manutenção e recursos hídricos.
+                Além de criar um ambiente esteticamente agradável, o jardim
+                contribui para a biodiversidade local, atraindo borboletas,
+                pássaros e insetos benéficos. Esta casa eco-friendly não apenas
+                representa um estilo de vida mais sustentável, mas também
+                demonstra como o design inteligente pode ser usado para
+                minimizar o impacto ambiental, criando um ambiente harmonioso
+                onde a natureza e a arquitetura coexistem de forma equilibrada.
+                A Residência Verde é um farol de inspiração para todos aqueles
+                que desejam viver em harmonia com o planeta.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <h2 class="title primary-color">Casa Planejada</h2>
+          </div>
+          <div class="col-12" id="featured-images">
+            <div class="row g-4">
+              <div class="col-12 col-md-8">
+                <div class="banner-content">
+                  <h3>EcoVida Residences</h3>
+                  <p class="secondary-color" style="text-align: justify;">
+                    O EcoVida Residences é um complexo residencial que redefine o conceito de habitação sustentável. Desde a sua concepção até a vida cotidiana de seus moradores, a sustentabilidade é a espinha dorsal deste projeto inovador.
+                    
+                    <br><br> <b>Painéis Solares Individuais:</b> Cada unidade residencial está equipada com painéis solares individuais no telhado. Esses painéis captam a energia do sol, convertendo-a em eletricidade limpa que alimenta as necessidades energéticas de cada casa. Os moradores desfrutam de eletricidade sustentável e reduzem sua pegada de carbono. 
+                    <br><br><b>Sistemas de Reciclagem de Água Cinza: </b>O EcoVida Residences adota uma abordagem holística para o uso responsável da água. Sistemas de reciclagem de água cinza são incorporados em cada unidade, permitindo que a água utilizada na cozinha e no banheiro seja tratada e reutilizada para fins não potáveis, como irrigação de jardins comunitários.
+
+                    <br><br><b>Espaços Verdes Comunitários:</b> Dentro do complexo, os espaços verdes comunitários são verdadeiros oásis de natureza. Jardins exuberantes, hortas orgânicas e áreas de recreação ao ar livre incentivam a interação social e a conexão com a natureza. Esses espaços também atuam como amortecedores naturais, melhorando a qualidade do ar e reduzindo o efeito das ilhas de calor urbanas.
+                    <br><br><b>Design Bioclimático: </b> O design arquitetônico do EcoVida Residences é otimizado para tirar proveito da ventilação natural e da iluminação solar direta. Janelas estrategicamente posicionadas e a orientação das unidades permitem que o ar fresco flua naturalmente através dos espaços interiores, reduzindo a necessidade de sistemas mecânicos de climatização. Além disso, a iluminação solar direta é maximizada, minimizando a dependência de iluminação elétrica durante o dia.
+
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                </div>
+              </div>
+            
+          <div class="col-12 col-md-4">
+              <img src="/img/project-6.jpg" alt="Projeto 6" class="img-fluid" />
+              <div class="banner-content"></div>
+          </div>
+          
+          <div class="col-12">
+            <h2 class="title primary-color">Edifício</h2>
+          </div>
+          <div class="col-12" id="featured-images">
+            
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <img src="/img/project-2.jpg" alt="Projeto 2" class="img-fluid" />
+                <div class="banner-content">
+                </div>
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="banner-content">
+                  <h3>O GreenTech Headquarters</h3>
+                  <p class="secondary-color" style="text-align: justify;">
+                    O GreenTech Headquarters é um exemplo notável de um escritório corporativo projetado com ênfase na sustentabilidade, com a missão de minimizar seu impacto ambiental e criar um ambiente de trabalho saudável e inspirador.
+                    <br><br> <b>Materiais de Construção Reciclados:</b> Desde sua fundação, a escolha dos materiais foi fundamental. O edifício é construído com materiais de construção reciclados e de baixo impacto ambiental, reduzindo a demanda por recursos naturais e minimizando o desperdício de materiais de construção.
+                    <br><br><b>Eficiência Energética: </b>O GreenTech Headquarters incorpora tecnologias de eficiência energética em sua infraestrutura, incluindo iluminação LED de baixo consumo, sistemas de resfriamento e aquecimento altamente eficientes, e controle de iluminação automatizado para otimizar o uso de energia.
+                    
+                    <br><br><b>Espaços Abertos e Iluminação Natural:</b> Os funcionários deste escritório corporativo desfrutam de um ambiente de trabalho excepcionalmente saudável e inspirador. Espaços amplos e abertos promovem a colaboração e a criatividade, enquanto a abundante iluminação natural, graças às grandes janelas estrategicamente posicionadas, cria uma atmosfera acolhedora e produtiva.
+                    <br><br><b>Áreas Verdes e Bem-Estar:  </b> O GreenTech Headquarters é cercado por áreas verdes exuberantes e pátios internos arborizados. Os funcionários têm acesso a espaços ao ar livre para descanso e relaxamento, promovendo a saúde e o bem-estar. Áreas de meditação e ioga também são parte integrante do ambiente, proporcionando momentos de pausa e rejuvenescimento.
+                    <br><br><b>Painéis Solares e Veículos Elétricos: </b> Painéis solares de última geração instalados no telhado geram eletricidade limpa para alimentar as operações do edifício. Além disso, o GreenTech Headquarters promove o uso de veículos elétricos para seus funcionários, com estações de carregamento disponíveis no local. Isso não apenas reduz as emissões de carbono, mas também incentiva a adoção de práticas mais sustentáveis de transporte.
+                    <br><br>O GreenTech Headquarters é mais do que um local de trabalho; é uma demonstração de compromisso com um futuro mais verde e saudável. Ele reflete não apenas valores ambientais, mas também a crença de que um ambiente de trabalho sustentável e saudável é fundamental para o sucesso empresarial e o bem-estar dos funcionários.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <h2 class="title primary-color">Construção Vertical</h2>
+              </div>
+
+              <div class="col-12 col-md-8">
+                <div class="banner-content">
+                  <h3>Light Books</h3>
+                  <p class="secondary-color" style="text-align: justify;">
+                    A "Light Books" é um farol que orienta nossa comunidade em direção a um futuro mais verde e consciente. Este projeto incorpora princípios de sustentabilidade em todos os aspectos, desde sua concepção até sua operação diária.
+                    <br><br> <b>Sistema de Resfriamento e Aquecimento Geotérmico:</b>  O coração sustentável deste edifício é seu sistema de resfriamento e aquecimento geotérmico. Utilizando o calor natural da Terra, este sistema eficiente regula a temperatura interna, reduzindo a dependência de sistemas de climatização tradicionais e minimizando o consumo de energia. 
+                    
+                    <br><br><b>Painéis Fotovoltaicos Integrados à Fachada: </b> A fachada da biblioteca é adornada com painéis fotovoltaicos que convertem a energia solar em eletricidade limpa. Esses painéis não apenas fornecem energia para as operações da biblioteca, mas também são um exemplo visível de nosso compromisso com a sustentabilidade, inspirando outros a adotarem fontes de energia renovável.
+
+                    <br><br><b>Iluminação LED de Baixo Consumo:</b> Dentro da biblioteca, a iluminação é fornecida por sistemas LED de baixo consumo de energia. Isso não apenas economiza eletricidade, mas também cria um ambiente acolhedor e convidativo para os leitores. Sensores de luz natural ajustam automaticamente a intensidade da iluminação para otimizar o uso de luz artificial durante o dia.
+                    
+                    <br><br><b>Maximizando a Luz Natural: </b>A arquitetura da "Luz da Sustentabilidade" é projetada para permitir o máximo de luz natural. Grandes janelas estrategicamente posicionadas e claraboias inundam o interior com luz solar durante o dia, criando um ambiente arejado e saudável para os frequentadores da biblioteca.
+                  
+                    <br><br>Esta biblioteca é mais do que um local de leitura; é um espaço onde a comunidade se reúne para aprender sobre práticas sustentáveis e se inspirar a adotar um estilo de vida mais ecológico. A "Luz da Sustentabilidade" demonstra que a sustentabilidade pode ser incorporada em edifícios públicos, servindo como um farol de inspiração e conscientização para todos que a visitam.
+
+                  </p>
+                </div>
+              </div>      
+          <div class="col-12 col-md-4">
+            <img src="/img/project-4.jpg" alt="Projeto 4" class="img-fluid" />
+            <div class="banner-content">
+
+            </div> 
+          </div>
+            
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color py-3" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="footer-top">
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+              <div class="row">
+                <div class="col-12 col-md-4" id="news-container">
+                  <h4>Fique por dentro das novidades</h4>
+                  <p class="secondary-color">
+                    Inscreva-se para saber em primeira mão
+                  </p>
+                  <form>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Digite o seu e-mail"
+                      />
+                    </div>
+                    <div id="liveAlertPlaceholder"></div>
+                    <p>
+                      <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample"
+                        aria-expanded="false"
+                        aria-controls="collapseWidthExample"
+                      >
+                        Inscrever
+                      </button>
+                    </p>
+                    <div style="min-height: 120px">
+                      <div
+                        class="collapse collapse-horizontal"
+                        id="collapseWidthExample"
+                      >
+                        <div class="card card-body" style="width: 300px">
+                          Inscrito!
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-12 col-md-4" id="contact-container">
+                  <h4>Formas de contato</h4>
+                  <p class="secondary-color">+55 (49) 3323-1234</p>
+                  <p class="secondary-color">contato@craft.com</p>
+                </div>
+                <div class="col-12 col-md-4" id="links-container">
+                  <div class="row py-2">
+                    <div class="row justify-content-between">
+                      <div class="col-4"></div>
+                      <div class="col-4" id="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-twitter"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">Craft &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                  Realizamos o seu projeto com
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

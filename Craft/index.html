@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft</title>
+    <link rel="shortcut icon" href="img/Icon-craft2.png" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="img/logo-craft2.png"
+            class="align-self-start mr-3"
+            alt="Craft"
+            width="200"
+            height="37"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- SLIDER -->
+    
+    <div class="row">
+      <div class="container col-8 py-3" id="slider-container">
+        <div
+          id="slider"
+          class="carousel slide offset-md-1 py-3"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner-1.jpg" class="d-block w-100" alt="Casa 1" />
+              <div class="carousel-caption">
+                <h5>Casas planejadas</h5>
+                <a href="/pages/projetos.html" class="btn btn-dark">Ver Projeto</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner-2.jpg" class="d-block w-100" alt="Casa 2" />
+              <div class="carousel-caption">
+                <h5>Projetos Complexos</h5>
+                <a href="/pages/projetos.html" class="btn btn-dark">Ver Projeto</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner-3.jpg" class="d-block w-100" alt="Casa 3" />
+              <div class="carousel-caption">
+                <h5>Projetos Inovadores</h5>
+                <a href="/pages/projetos.html" class="btn btn-dark">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-chevron-compact-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-chevron-compact-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-box primary-color"></i>
+                <div class="card-body">
+                  <h5 class="card-title primary-color">Projetos completos</h5>
+                  <p class="card-text secondary-color">
+                    Realizamos desde a estruturação até o acabamento
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-layers primary-color"></i>
+                <div class="card-body">
+                  <h5 class="card-title primary-color">
+                    Profissionais Capacitados
+                  </h5>
+                  <p class="card-text secondary-color">
+                    Todos os nossos profissionais possuem formação e experiência
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-lightning-charge"></i>
+                <div class="card-body primary-color">
+                  <h5 class="card-title primary-color">
+                    Adiantamento de entregas
+                  </h5>
+                  <p class="card-text secondary-color">
+                    Possuímos projetos semi-prontos que podem ser o que você procura!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-3">
+        <div class="row">
+          <h3>Avaliações</h3>
+          <div class="col">
+            <div class="card">
+              <div class="card-body primary-color">
+                <h6 class="card-title primary-color text-center">Camila Castro Barros:</h6>
+                <p>
+                  O site Craft é uma verdadeira inspiração para amantes de arquitetura! Adorei a maneira como apresentaram seus projetos e a facilidade de navegação. É um ótimo recurso para quem está em busca de ideias criativas para seu próprio espaço.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body primary-color">
+                <h6 class="card-title primary-color text-center">Alex Oliveira Almeida:</h6>
+                <p>
+                  O design elegante e minimalista do site Craft realmente chama a atenção. Além disso, a seção de portfólio é impressionante, mostrando a diversidade e qualidade dos projetos realizados pela equipe. Excelente trabalho!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body primary-color">
+                <h6 class="card-title primary-color text-center">Kauã Correia Sousa</h6>
+                <p>
+                  O site Craft é um verdadeiro tesouro de ideias de design. A seção de blog é especialmente informativa, oferecendo dicas úteis e tendências atuais em arquitetura e design de interiores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Trabalhos em Destaque</h2>
+        <p class="subtitle secondary-color">
+          Conheça nossos projetos mais desafiadores
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/project-1.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Casa</p>
+              <h3>Residência Verde</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-2.jpg" alt="Projeto 2" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Edifício</p>
+              <h3>EcoVida Residences</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-3.jpg" alt="Projeto 3" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Construção Vertical</p>
+              <h3>Vision Flavour</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-4.jpg" alt="Projeto 4" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Construção Vertical</p>
+              <h3>Light Books</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-5.jpg" alt="Projeto 5" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Casa</p>
+              <h3>White Peace</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-6.jpg" alt="Projeto 6" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Casa</p>
+              <h3>GreenTech Headquarters</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- INFO -->
+    <div class="container py-3" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color py-4">Info</h2>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img src="img/infobanner.jpg" alt="Informações" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title">Craft</h2>
+                <p class="subtitle secondary-color">
+                 Transformando Ideias em Espaços Sustentáveis e Inspiradores.
+                  <br><br>
+                 Horário de Funcionamento: Segunda a Sexta-feira: 9:00 às 18:00.
+<br>Se você deseja agendar uma consulta, obter informações adicionais sobre nossos serviços ou discutir projetos futuros, não hesite em nos contatar. Estamos ansiosos para colaborar com você na criação de espaços inspiradores e sustentáveis que atendam às suas necessidades e visões únicas.
+
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">18</h3>
+                    <p class="secondary-color">Anos na construção civil</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">95</h3>
+                    <p class="secondary-color">Projetos executados</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">639</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="/pages/sobre.html" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite o seu e-mail"
+                    />
+                  </div>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Inscrever
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 300px;">
+                        Inscrito!
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(48)9999-9999</p>
+                <p class="secondary-color">contato@craft.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row py-2">
+                    <p> Rua das Artes, 123 Bairro Sustentável, Cidade Cosmopolita</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">Craft &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                  Realizamos o seu projeto com
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
